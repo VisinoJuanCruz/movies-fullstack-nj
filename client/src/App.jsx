@@ -1,15 +1,13 @@
 import './App.css'
 import axios from 'axios'
-import { PokemonCard } from './components/PokemonCard'
+import { PokemonCardContainer } from './components/PokemonCardContainer/PokemonCardContainer'
 
 
 function App() {
 
-
-
   return (
     <>
-     <PokemonCard/>
+     <PokemonCardContainer/>
     </>
   )
 }

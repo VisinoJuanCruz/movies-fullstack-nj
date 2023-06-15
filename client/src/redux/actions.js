@@ -3,7 +3,7 @@ import {
 } from "./action_types";
 import axios from "axios";
 
-export const getExercises = () => {
+export const getPokemons = () => {
     return async function (dispatch) {
       const pokemons = (await axios.get(`/pokemons`)).data;
       dispatch({

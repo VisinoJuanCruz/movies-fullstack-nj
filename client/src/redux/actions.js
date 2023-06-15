@@ -5,10 +5,10 @@ import axios from "axios";
 
 export const getExercises = () => {
     return async function (dispatch) {
-      const exercisesData = (await axios.get(`/exercises`)).data;
+      const pokemons = (await axios.get(`/pokemons`)).data;
       dispatch({
         type: GET_POKEMONS,
-        payload: exercisesData,
+        payload: pokemons,
       });
     };
   };

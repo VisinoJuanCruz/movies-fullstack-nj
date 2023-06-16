@@ -7,7 +7,6 @@ const URL = "https://pokeapi.co/api/v2"
 
 export const getPokemons = () => {
   console.log('pokemons')
-
     return async function (dispatch) {
       const pokemons = (await axios.get(`${URL}/pokemon`));
       dispatch({

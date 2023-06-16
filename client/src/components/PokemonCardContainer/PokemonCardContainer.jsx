@@ -9,26 +9,26 @@ export const PokemonCardContainer = () => {
   const dispatch = useDispatch();
   
   useEffect(() => {
+    console.log('pokemons')
   dispatch(getPokemons());
   },[])
-  
   const pokemons = useSelector((state) => state.pokemons);
   
   return (
     <div className="pokemon">
-      {pokemons.map((pokemon) => {
+      {/* {pokemons.map((pokemon) => {
         return (
           <div className="pokemon" key={pokemon.id}>
-            <div className="cardPokemon">
+            <div className="cardPokemon"> */}
             <PokemonCard 
-              id={pokemon.id}
-              name={pokemon.name}
-              type={pokemon.type}
+              // id={1}
+              // name={pokemon.name}
+              // type={pokemon.type}
             />
-            </div>
+            {/* </div>
           </div>
         );
-      })}
+      })} */}
     </div>
   );
 };

@@ -1,11 +1,11 @@
-export const PokemonCard = ({id, name, type}) => {
+export const PokemonCard = () => {
 
     return (
         <div className="card">
             <img src="" alt="" />
             <div className="card-body">
-                <h2>{name}</h2>
-                <p>{type}</p>
+                <h2>Hola</h2>
+                <p>ojala funcione</p>
                 "niki se la come"
             </div>
         </div>

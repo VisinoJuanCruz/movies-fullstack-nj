@@ -1,6 +1,6 @@
 import {
     GET_POKEMONS,
-} from "./action_types";
+} from "./actions_types";
 
 export const initialState = {
     pokemons: []

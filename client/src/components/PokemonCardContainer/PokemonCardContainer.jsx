@@ -1,7 +1,7 @@
-import PokemonCard from "../pokemonCard/PokemonCard";
+import {PokemonCard} from "../pokemonCard/PokemonCard";
 import { useSelector } from "react-redux";
 
-export const CardsContainer = () => {
+export const PokemonCardContainer = () => {
   const pokemons = useSelector((state) => state.pokemons);
 
   return (

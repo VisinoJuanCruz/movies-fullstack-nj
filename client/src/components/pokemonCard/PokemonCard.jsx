@@ -6,6 +6,7 @@ export const PokemonCard = ({id, name, type}) => {
             <div className="card-body">
                 <h2>{name}</h2>
                 <p>{type}</p>
+                "niki se la come"
             </div>
         </div>
     )

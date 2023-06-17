@@ -6,8 +6,8 @@ const routes = require('./routes/routes.js');
 const server = express();
 require('dotenv').config()
 const { URL_HOST } = process.env
-server.name = 'API';
-
+server.name = 'SERVER';
+console.log(URL_HOST)
 server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 server.use(bodyParser.json({ limit: '50mb' }));
 server.use(cookieParser());

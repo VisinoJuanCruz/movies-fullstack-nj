@@ -5,9 +5,9 @@ import axios from "axios";
 
 const URL = "https://pokeapi.co/api/v2"
 
-export const getPokemons = () => {
+export const getPokemons = (offset = 0, limit = 24) => {
   return async function (dispatch) {
-    const pokemons = (await axios.get(`${URL}/pokemon`)).data;
+    const pokemons = (await axios.get(`${URL}/pokemon?offset=${offset}&limit=${limit}`)).data;
     const arrPokUrls = pokemons.results.map((pokemon) => pokemon.url);
     const arrPok = await Promise.all(
       arrPokUrls.map(async (url) => {

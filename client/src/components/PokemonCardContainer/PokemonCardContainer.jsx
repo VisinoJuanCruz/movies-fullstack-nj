@@ -29,7 +29,7 @@ export const PokemonCardContainer = () => {
         {
             pokemons.results.map(pokemon => {
                 return(
-                    <li key={pokemon.id} className="col-3">
+                    <li key={pokemon.id} className="col-sm-12 col-md-6 col-lg-4">
                           <PokemonCard pokemonUrl={pokemon.url}/>
                     </li>
               

@@ -5,7 +5,8 @@ const {
     PORT
 } = process.env;
 
-
-server.listen(PORT, () => {
-    console.log(`%s listening at http://localhost:${PORT}`); // eslint-disable-line no-console
-});
+//conn.sync({ force: false, alter:true }).then(() => {
+    server.listen(PORT, () => {
+        console.log(`%s listening at http://localhost:${PORT}`); // eslint-disable-line no-console
+    });
+//});

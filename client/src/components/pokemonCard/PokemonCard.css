@@ -9,6 +9,8 @@
     height:10;
     margin:10%;
     padding:10px;
+    box-shadow: 5px 5px 50px black;
+
 }
 
 .fire{background-color:#F08030;}
@@ -32,7 +34,6 @@
 
 .background{
     text-align: center;
-    background: linear-gradient(to right, rgb(7, 163, 25),rgb(17, 89, 4));
     width: 330px;
     height: 300px;
     display: flex;

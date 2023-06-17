@@ -8,7 +8,6 @@ const URL = "http://localhost:5005"
 export const getPokemons = (offset = 0, limit = 24) => {
   return async function (dispatch) {
     const pokemons = (await axios.get(`${URL}/pokemons?offset=${offset}&limit=${limit}`)).data;
-    console.log(pokemons)
       dispatch({
         type: GET_POKEMONS,
         payload: pokemons,

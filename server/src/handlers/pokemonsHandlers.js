@@ -5,7 +5,6 @@ const {API_URL} = process.env;
 const getPokemonsHandlers = async (req,res) => {
     const {offset = 0, limit = 24} = req.query
     const pokemons = (await axios.get(`${API_URL}/pokemon?offset=${offset}&limit=${limit}`)).data;
-    console.log(pokemons)
     const arrPokUrls = pokemons.results
     const arrPok = await Promise.all(
         arrPokUrls.map(async (e) => {

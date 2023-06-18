@@ -24,8 +24,6 @@ export const PokemonCardContainer = () => {
 
   return (
     <div className="pokedex-container" >
-        
-        <h1>Pokedex</h1>
         <ul className='pokemoncards-container row'>
         {
             pokemons.map(pokemon => {

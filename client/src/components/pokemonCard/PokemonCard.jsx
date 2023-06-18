@@ -23,18 +23,25 @@ export const PokemonCard = (pokemon) =>  {
 
               <div className="content">
                 <h1 className="pokemon-name">
-                    { capitalize(pokemon.pokemon.name) }
+                    <strong>
+                        { capitalize(pokemon.pokemon.name) }
+                        </strong>
                 </h1>
               
                 <span className="pokemon-type">
-                    {pokemon.pokemon.types[0].type.name}
+                    <strong>
+                        {pokemon.pokemon.types[0].type.name}
+                    </strong>
                 </span>
               
                 <div className="pokemon-stats row">
                         {
                         pokemon.pokemon.stats.map(stat => {
                             return(
-                                <p className="stat col-6 " key={stat.stat.name}>{capitalize(stat.stat.name)}: {stat.base_stat}</p>
+                                <p className="stat col-6 " key={stat.stat.name}>
+                                    <strong>{capitalize(stat.stat.name)}: {stat.base_stat}</strong>
+                                    
+                                    </p>
                             )})
                         }
                 </div>

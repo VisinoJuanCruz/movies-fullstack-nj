@@ -17,7 +17,8 @@ export const PokemonCardContainer = () => {
   },[])
 
   const pokemons = useSelector(state => state.pokemons);
-  
+  const pageNumber = useSelector(state => state.pageNumber);
+  console.log(pageNumber)
   if(loading){
     return <h1>🌀Loading🌀</h1>
   }
@@ -39,7 +40,7 @@ export const PokemonCardContainer = () => {
             })
         }
         </ul>
-
+        {/* <Paginate page={pageNumber}/> */}
     </div>
 )
 

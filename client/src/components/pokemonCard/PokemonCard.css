@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.pokemon-card-container{
+    border-radius:15px;
+    width: 350px;
+    height:10;
+    margin:10%;
+    padding:10px;
+    box-shadow: 5px 5px 50px black;
+
+}
+
+.fire{background-color:#F08030;}
+.normal{background-color:#A8A878}
+.fighting{background-color:#C03028}
+.water{background-color:#6890F0}
+.flying{background-color:#A890F0}
+.grass{background-color:#26cd3f}
+.poison{background-color:#A040A0}
+.electric{background-color:#F8D030}
+.ground{background-color:#E0C068}
+.psychic{background-color:#F85888}
+.rock{background-color:#B8A038}
+.ice{background-color:#98D8D8}
+.bug{background-color:#A8B820}
+.dragon{background-color:#7038F8}
+.ghost{background-color:#705898}
+.dark{background-color:#705848}
+.steel{background-color:#B8B8D0}
+.fairy{background-color:#EE99AC}
+
+.background{
+    text-align: center;
+    width: 330px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Agrega este estilo */
+    border-radius: 15px 15px 0px 0px;
+}
+.fire .background{background: linear-gradient(to right,rgb(248, 138, 95), rgb(163, 7, 7))}
+.normal .background{background: linear-gradient(to right,#c2c27a,#8e8e29)}
+.fighting .background{background: linear-gradient(to right,#d74942, #7a0903)}
+.water .background{background: linear-gradient(to right,rgb(77, 131, 197), rgb(7, 56, 163))}
+.flying .background{background: linear-gradient(to right,rgb(42, 108, 113), #7666a6)}
+.grass .background{background: linear-gradient(to right,#5dca6d,#0e8f22)}
+.poison .background{background: linear-gradient(to right,#d459d4, #791f79)}
+.electric .background{background: linear-gradient(to right,#f1d04a, #c3a013)}
+.ground .background {background: linear-gradient(to right,#c8ae65,#a98932)}
+.psychic .background {background: linear-gradient(to right, #9f3f5b, #b13056)}
+.rock .background{background: linear-gradient(to right,#cab349,#85711a)}
+.ice .background{background: linear-gradient(to right, #84c8c8, #3c8080)}
+.bug .background{background: linear-gradient(to right,#a8b153,#7e8b0c)}
+.dragon .background{background: linear-gradient(to right,#654ca2, #491dae)}
+.ghost .background{background: linear-gradient(to right,#8165ae, #53397d)}
+.dark .background{background: linear-gradient(to right,#99765e, #60432f)}
+.steel .background{background: linear-gradient(to right,#73739e, #515171)}
+.fairy .background{background: linear-gradient(to right,#db96a5, #b36576)}
+
+.image{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.pokemon-name{
+    text-align: center;
+    font-size:19px;
+}
+.pokemon-type{
+    background-color:rgba(0, 0, 0, 0.9);
+    padding:5px;
+    color:white;
+    border-radius: 5px;
+    width:100px;
+    display:block;
+    text-align: center;
+    position:relative;
+    top: -50px;
+}
+.pokemon-stats{
+  display:grid;
+  padding:10px;
+    
+}
+.content{
+    padding:10px;
+    border-radius:0px 0px 15px 15px;
+}
+.fire .content{background:linear-gradient(to right, rgb(170, 86, 63),rgb(181, 119, 109))}
+.normal .content{background:linear-gradient(to right,#8e8e29,#dada68)}
+.fighting .content{background:linear-gradient(to right,#ad1109,#c0615c)}
+.water .content{background:linear-gradient(to right, rgb(26, 133, 255),rgb(94, 139, 133))}
+.flying .content{background:linear-gradient(to right, rgb(170, 86, 63),rgb(181, 119, 109))}
+.grass .content{background:linear-gradient(to right, rgb(7, 163, 25),rgb(128, 192, 117))}
+.poison .content{background:linear-gradient(to right,#791f79,#bd74bd)}
+.electric .content{background:linear-gradient(to right, #c3a013,#d8c05f)}
+.ground .content{background:linear-gradient(to right,#a98932,#eac45b)}
+.psychic .content{background:linear-gradient(to right, #b13056, #d76084)}
+.rock .content{background:linear-gradient(to right,#85711a,#c6ab33)}
+.ice .content{background:linear-gradient(to right, #5a8d8d, #7cd7d7)}
+.bug .content{background:linear-gradient(to right,#818d12,#c8d553)}
+.dragon .content{background:linear-gradient(to right, #321576,#7057ab)}
+.ghost .content{background:linear-gradient(to right, #492b79,#987ec1)}
+.dark .content{background:linear-gradient(to right, #634129,#a48068)}
+.steel .content{background:linear-gradient(to right,#8484a8,#bbbbde)}
+.fairy .content{background:linear-gradient(to right, #b36576, #eda3b3)}
+
+
+
+

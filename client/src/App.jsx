@@ -1,12 +1,17 @@
-import { useState } from 'react'
 import './App.css'
+import { Home } from './views/home/Home'
+//import { PokemonCardContainer } from './components/PokemonCardContainer/PokemonCardContainer'
+import { Route, Routes } from "react-router-dom";
+
 
 function App() {
 
   return (
-    <>
-     <h1>CONTRATENME POR FAVOR</h1>
-    </>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
+    </div>
   )
 }
 

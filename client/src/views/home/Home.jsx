@@ -1,4 +1,4 @@
-import {PokemonCardContainer} from "../../components/PokemonCardContainer/PokemonCardContainer"
+import {PokemonCardContainer} from "../../components/pokemonCardContainer/PokemonCardContainer"
 
 export const Home = () => {
  
@@ -6,7 +6,6 @@ export const Home = () => {
  return (
     <div>
         <PokemonCardContainer/>
-
     </div>
  )
 }

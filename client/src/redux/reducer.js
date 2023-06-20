@@ -4,7 +4,7 @@ import {
 
 export const initialState = {
     pokemons: [],
-    pageNumber: []
+    pokemonsPageNumber: []
 };
 const rootReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -12,7 +12,7 @@ const rootReducer = (state = initialState, action) => {
         return {
           ...state,
           pokemons: action.payload.pageData,
-          pageNumber: action.payload.countPages
+          pokemonsPageNumber: action.payload.countPages
         };
         default:
           return { ...state };

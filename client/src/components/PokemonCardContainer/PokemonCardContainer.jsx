@@ -26,20 +26,15 @@ export const PokemonCardContainer = () => {
     <div className="pokedex-container" >
         <ul className='pokemoncards-container row'>
         {
-            pokemons.map(pokemon => {
-              console.log("LE PASO:")
-              console.log(pokemon)
-                return(
-                  
+            pokemons.map(pokemon => {              
+                return(                  
                     <li key={pokemon.id} className="col-sm-12 col-md-6 col-lg-4">
                           <PokemonCard pokemon={pokemon}/>
-                    </li>
-              
+                    </li>              
                 )
             })
         }
         </ul>
-
     </div>
 )
 

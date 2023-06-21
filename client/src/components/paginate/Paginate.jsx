@@ -2,17 +2,17 @@ import "./Paginate.css";
 
 export const Paginate = ({ pageNumber, currentPage, setCurrentPage }) => {
 
-  let pageNumbers = [];    
+  let pageNumbers = [];
   let maxPage = currentPage + 5;
   let minPage = currentPage - 5;
-    if(maxPage >= pageNumber){
-        minPage = pageNumber - 10
-        maxPage = pageNumber
-    }
-    if(minPage <= 0){
-        minPage = 1
-        maxPage = 10
-    }
+  if (maxPage >= pageNumber) {
+    minPage = pageNumber - 10
+    maxPage = pageNumber
+  }
+  if (minPage <= 0) {
+    minPage = 1
+    maxPage = 10
+  }
 
   for (let i = minPage; i <= maxPage; i++) {
     pageNumbers.push(i);
@@ -32,12 +32,12 @@ export const Paginate = ({ pageNumber, currentPage, setCurrentPage }) => {
   return (
     <ul className="paginate">
       <button
-              className={currentPage === 1 ? "buttonDisabled" : "button"}
-              href=""
-              onClick={() => onSelectedPage(1)}
-            >
-              Primera
-      </button>      
+        className={currentPage === 1 ? "buttonDisabled" : "button"}
+        href=""
+        onClick={() => onSelectedPage(1)}
+      >
+        Primera
+      </button>
       <button
         className={currentPage === 1 ? "buttonDisabled" : "button"}
         onClick={onPreviusPage}
@@ -49,7 +49,7 @@ export const Paginate = ({ pageNumber, currentPage, setCurrentPage }) => {
         return (
           <li key={numberPage}>
             <button
-              className={`button ${numberPage === currentPage ? "buttonSelected" : "" }`}
+              className={`button ${numberPage === currentPage ? "buttonSelected" : ""}`}
               href=""
               onClick={() => onSelectedPage(numberPage)}
             >
@@ -66,12 +66,12 @@ export const Paginate = ({ pageNumber, currentPage, setCurrentPage }) => {
         Siguiente
       </button>
       <button
-              className={currentPage === pageNumber ? "buttonDisabled" : "button"}
-              href=""
-              onClick={() => onSelectedPage(pageNumber)}
-            >
-              Ultima
-            </button>
+        className={currentPage === pageNumber ? "buttonDisabled" : "button"}
+        href=""
+        onClick={() => onSelectedPage(pageNumber)}
+      >
+        Ultima
+      </button>
     </ul>
   );
 };

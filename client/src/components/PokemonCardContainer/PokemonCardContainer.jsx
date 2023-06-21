@@ -8,7 +8,7 @@ import './PokemonCardContainer.css'
 export const PokemonCardContainer = () => {
  
   const [loading, setLoading] = useState(false);
-  const [currentPage, setCurrentPage] = useState()
+  const [currentPage, setCurrentPage] = useState(1)
 
   const dispatch = useDispatch();
   
@@ -20,6 +20,8 @@ export const PokemonCardContainer = () => {
 
   const pokemons = useSelector(state => state.pokemons);
   const pokemonsPageNumber = useSelector(state => state.pokemonsPageNumber);
+
+  console.log(pokemonsPageNumber, "page number")
   if(loading){
     return <h1>🌀Loading🌀</h1>
   }
@@ -29,9 +31,7 @@ export const PokemonCardContainer = () => {
         <ul className='pokemoncards-container row'>
         {        
             pokemons.map(pokemon => {
-                return(
-                  
-
+                return( 
                     <li key={pokemon.id} className="col-sm-12 col-md-6 col-lg-4">
                           <PokemonCard pokemon={pokemon}/>
                     </li>              

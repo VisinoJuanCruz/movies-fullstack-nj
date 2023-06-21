@@ -1,0 +1,35 @@
+header{background-color:grey;
+border-bottom: 2px solid black;}
+
+
+
+.header-name{
+    margin-bottom:0;
+    transition: color 2s;
+    transition: font-size 1.5s;
+
+}
+
+.header-name:hover{
+    color:white;
+}
+
+
+.item-nav-menu{
+    color:black;
+    transition: color 2s;
+    transition: font-size 1.5s;
+
+}
+
+.item-nav-menu:hover{
+    color: white;
+  
+}
+
+.nav-menu{
+    font-size:1.2em;
+}
+
+
+

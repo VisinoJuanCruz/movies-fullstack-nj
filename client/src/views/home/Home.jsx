@@ -1,4 +1,4 @@
-import {PokemonCardContainer} from "../../components/pokemonCardContainer/PokemonCardContainer"
+import { PokemonCardContainer } from "../../components/PokemonCardContainer/PokemonCardContainer.jsx"
 
 export const Home = () => {
  

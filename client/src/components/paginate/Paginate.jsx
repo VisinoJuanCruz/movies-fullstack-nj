@@ -1,8 +1,8 @@
 import "./Paginate.css";
 
 export const Paginate = ({ pageNumber, currentPage, setCurrentPage }) => {
-  let pageNumbers = [];
-    console.log(currentPage)
+
+  let pageNumbers = [];    
   let maxPage = currentPage + 5;
   let minPage = currentPage - 5;
     if(maxPage >= pageNumber){
@@ -32,6 +32,13 @@ export const Paginate = ({ pageNumber, currentPage, setCurrentPage }) => {
   return (
     <ul className="paginate">
       <button
+              className={currentPage === 1 ? "buttonDisabled" : "button"}
+              href=""
+              onClick={() => onSelectedPage(1)}
+            >
+              Primera
+      </button>      
+      <button
         className={currentPage === 1 ? "buttonDisabled" : "button"}
         onClick={onPreviusPage}
         disabled={currentPage === 1 ? true : false}
@@ -42,9 +49,7 @@ export const Paginate = ({ pageNumber, currentPage, setCurrentPage }) => {
         return (
           <li key={numberPage}>
             <button
-              className={`button ${
-                numberPage === currentPage ? "buttonSelected" : ""
-              }`}
+              className={`button ${numberPage === currentPage ? "buttonSelected" : "" }`}
               href=""
               onClick={() => onSelectedPage(numberPage)}
             >
@@ -54,14 +59,19 @@ export const Paginate = ({ pageNumber, currentPage, setCurrentPage }) => {
         );
       })}
       <button
-        className={
-          currentPage === pageNumber ? "buttonDisabled" : "button"
-        }
+        className={currentPage === pageNumber ? "buttonDisabled" : "button"}
         onClick={onNextPage}
         disabled={currentPage === pageNumber ? true : false}
       >
         Siguiente
       </button>
+      <button
+              className={currentPage === pageNumber ? "buttonDisabled" : "button"}
+              href=""
+              onClick={() => onSelectedPage(pageNumber)}
+            >
+              Ultima
+            </button>
     </ul>
   );
 };

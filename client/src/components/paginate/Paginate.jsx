@@ -2,20 +2,19 @@ import "./Paginate.css";
 
 export const Paginate = ({ pageNumber, currentPage, setCurrentPage }) => {
   let pageNumbers = [];
+    console.log(currentPage)
+  let maxPage = currentPage + 5;
+  let minPage = currentPage - 5;
+    if(maxPage >= pageNumber){
+        minPage = pageNumber - 10
+        maxPage = pageNumber
+    }
+    if(minPage <= 0){
+        minPage = 1
+        maxPage = 10
+    }
 
-  let pagesToShow = [];
-  switch (currentPage) {
-    case 1:
-      pagesToShow = [1, 2, 3, 4, 5];
-      break;
-    case 2:
-      pagesToShow = [2, 3, 4, 5, 6];
-      break;
-    default:
-      break;
-  }
-
-  for (let i = 1; i <= pageNumber; i++) {
+  for (let i = minPage; i <= maxPage; i++) {
     pageNumbers.push(i);
   }
 
